@@ -1,0 +1,64 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+
+  --palette-charade: #21222c;
+  --palette-gray: #32343e;
+  --palette-green: #66bb6a;
+  --palette-midnight: #141725;
+  --palette-pale-blue: #b1b5d3;
+  --palette-pink: #d14671;
+  --palette-pink-darker: #be2f5b;
+  --palette-rock: #E8F0FF;
+  --palette-sky: #81d3f9;
+  --palette-turquoise: #0cc0df;
+  --palette-white: #fff;
+  --palette-white-03: rgba(255, 255, 255, 0.03);
+  --palette-white-05: rgba(255, 255, 255, 0.05);
+  --palette-white-10: rgba(255, 255, 255, 0.1);
+  --palette-white-20: rgba(255, 255, 255, 0.2);
+  --palette-white-30: rgba(255, 255, 255, 0.3);
+  --palette-white-darker: #d9d9d9;
+  --palette-yellow: #ffd54f;
+
+
+  --font-size-small: 15px;
+  --font-size-normal: 16px;
+  --font-size-large: 18px;
+  --font-size-llarge: 24px;
+  --font-size-xlarge: 32px;
+  --font-size-xxlarge: 46px;
+  --font-size-xxxlarge: 64px;
+
+
+
+  --ifm-color-primary: #003da6;
+  --ifm-color-primary-dark: #003795;
+  --ifm-color-primary-darker: #00348d;
+  --ifm-color-primary-darkest: #002b74;
+  --ifm-color-primary-light: #0043b7;
+  --ifm-color-primary-lighter: #0046bf;
+  --ifm-color-primary-lightest: #004fd8;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
