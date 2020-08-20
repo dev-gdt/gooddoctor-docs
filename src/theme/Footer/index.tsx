@@ -6,6 +6,7 @@ import useMetadataContext from "@theme/useMetadataContext"
 
 import sectionStyles from "../../css/section.module.css"
 import footerStyles from "./styles.module.css"
+import { useLocation } from "react-router-dom"
 
 type Props = Readonly<{
   href?: string
@@ -42,7 +43,10 @@ const Footer = () => {
   const { footer } = themeConfig
   const { copyright, links } = footer
 
-  if (location.pathname.indexOf("/api") !== -1) {
+  const loc = useLocation()
+  console.log(loc.pathname)
+
+  if (loc.pathname.indexOf("/api") !== -1) {
     return null
   }
 

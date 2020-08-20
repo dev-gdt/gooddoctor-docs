@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "./node_modules/@docusaurus/core/bin/docusaurus.js start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clean": "rm -rf build",
-    "prod": "npm run build && pm2 start ecosystem.config.js --env production"
+    "prod": "pm2 start ecosystem.config.js"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.61",
@@ -26,6 +26,7 @@
     "rapidoc": "^8.1.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0",
     "throttle-debounce": "2.2.1",
     "typescript": "3.9.7",
     "unist-util-visit": "2.0.3"

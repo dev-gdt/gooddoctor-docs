@@ -5,11 +5,14 @@ import Link from "@docusaurus/Link"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import styles from "./styles.module.css"
+import { useLocation } from "react-router-dom"
 import "rapidoc"
 
 const APIPage = (props) => {
-  if (location.search) {
-    let param = new URLSearchParams(location.search)
+  const loc = useLocation()
+
+  if (loc.search) {
+    let param = new URLSearchParams(loc.search)
 
     let url = param.get("url")
     let specUrl = ""
