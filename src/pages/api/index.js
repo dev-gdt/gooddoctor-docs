@@ -6,8 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import styles from "./styles.module.css"
 import { useLocation } from "react-router-dom"
-import "rapidoc"
-
+import Head from "@docusaurus/Head"
 const APIPage = (props) => {
   const loc = useLocation()
 
@@ -21,15 +20,21 @@ const APIPage = (props) => {
         specUrl = "http://utm.gooddoctor.local/swagger.json"
         break
       case "guandala":
-        specUrl = "http://utm.gooddoctor.local/swagger.json"
+        specUrl = "http://utm.gooddoctor.local/swagger1.json"
         break
       case "nominatim":
-        specUrl = "http://utm.gooddoctor.local/swagger.json"
+        specUrl = "http://utm.gooddoctor.local/swagger2.json"
         break
     }
 
     return (
       <Layout title={"utm page"} description="Description API">
+        <Head>
+          <script
+            type="module"
+            src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"
+          ></script>
+        </Head>
         <rapi-doc
           rapi-doc
           id="thedoc"
