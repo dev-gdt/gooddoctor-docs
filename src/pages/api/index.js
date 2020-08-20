@@ -60,15 +60,15 @@ const APIPage = (props) => {
   }
   return (
     <Layout title={"api"} description="Description API">
-      <div>
+      <p className={styles.utm}>
         <Link to={useBaseUrl("/api?url=utm")}>UTM Generator</Link>
-      </div>
-      <div>
+      </p>
+      {/* <div>
         <Link to={useBaseUrl("/api?url=guandala")}>Guandala</Link>
       </div>
       <div>
         <Link to={useBaseUrl("/api?url=nominatim")}>Nominatim</Link>
-      </div>
+      </div> */}
     </Layout>
   )
 }
