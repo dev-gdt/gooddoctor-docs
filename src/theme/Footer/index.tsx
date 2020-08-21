@@ -2,12 +2,11 @@ import clsx from "clsx"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import React from "react"
-
-import Button from "@theme/Button"
 import useMetadataContext from "@theme/useMetadataContext"
 
 import sectionStyles from "../../css/section.module.css"
 import footerStyles from "./styles.module.css"
+import { useLocation } from "react-router-dom"
 
 type Props = Readonly<{
   href?: string
@@ -18,7 +17,7 @@ type Props = Readonly<{
 const FooterLink = ({ to, href, label, ...props }: Props) => {
   const linkHref = useBaseUrl(href || "", { forcePrependBaseUrl: false })
   const linkTo = useBaseUrl(to || "")
-
+  console.log(linkHref, linkTo)
   return (
     <a
       className={footerStyles.footer__link}
@@ -43,6 +42,13 @@ const Footer = () => {
   const { themeConfig } = siteConfig
   const { footer } = themeConfig
   const { copyright, links } = footer
+
+  const loc = useLocation()
+  console.log(loc.pathname)
+
+  if (loc.pathname.indexOf("/api") !== -1) {
+    return null
+  }
 
   return (
     <footer
