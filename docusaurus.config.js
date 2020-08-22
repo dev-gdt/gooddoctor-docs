@@ -13,12 +13,12 @@ const customFields = {
 module.exports = {
   title: "Gooddoctor",
   tagline: "Good Doctor | Tips Kesehatan, Chat Dokter, Beli Obat Online",
-  url: "https://gooddoctor-yb.github.io/gooddoctor-docs",
-  baseUrl: "/",
+  url: "https://gooddoctor-yb.github.io",
+  baseUrl: "/gooddoctor-docs/",
   onBrokenLinks: "ignore",
   favicon: "img/favicon.ico",
-  organizationName: "gooddoctor-yb", // Usually your GitHub org/user name.
   projectName: "gooddoctor-docs", // Usually your repo name.
+  organizationName: "gooddoctor-yb", // Usually your GitHub org/user name.
   themeConfig: {
     navbar: {
       title: "",
