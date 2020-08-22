@@ -4,8 +4,8 @@
   <ShortName>Gooddoctor</ShortName>
   <Description>Search Gooddoctor</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://gooddoctor-yb.github.io/gooddoctor-docs/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://gooddoctor-yb.github.io/gooddoctor-docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://gooddoctor-yb.github.io/gooddoctor-docs/opensearch.xml" />
-  <moz:SearchForm>https://gooddoctor-yb.github.io/gooddoctor-docs</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://gooddoctor-yb.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://gooddoctor-yb.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://gooddoctor-yb.github.io/opensearch.xml" />
+  <moz:SearchForm>https://gooddoctor-yb.github.io</moz:SearchForm>
 </OpenSearchDescription>
