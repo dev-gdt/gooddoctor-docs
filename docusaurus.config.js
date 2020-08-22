@@ -1,4 +1,3 @@
-
 const customFields = {
   copyright: `Copyright © ${new Date().getFullYear()} QuestDB`,
   description:
@@ -14,12 +13,12 @@ const customFields = {
 module.exports = {
   title: "Gooddoctor",
   tagline: "Good Doctor | Tips Kesehatan, Chat Dokter, Beli Obat Online",
-  url: "https://www.gooddoctor.co.id/",
+  url: "https://gooddoctor-yb.github.io/gooddoctor-docs",
   baseUrl: "/",
   onBrokenLinks: "ignore",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "gooddoctor doc", // Usually your repo name.
+  organizationName: "gooddoctor-yb", // Usually your GitHub org/user name.
+  projectName: "gooddoctor-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "",
@@ -38,7 +37,7 @@ module.exports = {
         { to: "blog", label: "Blog", position: "left" },
         { to: "help", label: "Help", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/gooddoctor-yb/gooddoctor-docs",
           label: "GitHub",
           position: "right",
         },
@@ -84,6 +83,11 @@ module.exports = {
       ],
       copyright: customFields.copyright,
     },
+    algolia: {
+      appId: "37YTCPPPTL",
+      apiKey: "3b8e7b27f5fa1682a20a56957913cfa8",
+      indexName: "gooddoctor",
+    },
   },
   presets: [
     [
@@ -95,13 +99,13 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/gooddoctor-yb/gooddoctor-docs/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            "https://github.com/gooddoctor-yb/gooddoctor-docs/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/global.css"),
