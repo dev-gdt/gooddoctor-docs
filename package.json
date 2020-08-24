@@ -8,6 +8,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "pages": "GIT_USER=gooddoctor-yb CURRENT_BRANCH=master npm run deploy",
     "serve": "docusaurus serve",
     "clean": "rm -rf build",
     "prod": "npm run build && pm2 start ecosystem.config.js"
