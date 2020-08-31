@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    min-height: calc(480px + 4.5rem);
+    min-height: calc(200px + 4.5rem);
     flex-direction: column;
     background: var(--palette-rock);
 }
