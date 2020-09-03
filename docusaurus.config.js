@@ -33,6 +33,7 @@ module.exports = {
           position: "left",
         },
         { to: "api", label: "API", position: "left" },
+        { to: "login", label: "LOGIN", position: "right" },
         // { to: "blog", label: "Blog", position: "left" },
         // { to: "help", label: "Help", position: "left" },
         {

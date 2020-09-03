@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import clsx from "clsx"
 import Layout from "@theme/Layout"
 import Link from "@docusaurus/Link"
@@ -7,7 +7,23 @@ import useBaseUrl from "@docusaurus/useBaseUrl"
 import styles from "./styles.module.css"
 import { useLocation } from "react-router-dom"
 import Head from "@docusaurus/Head"
+
+import axios from "axios"
+
 const APIPage = (props) => {
+  async function getUserInfo() {
+    const res = axios.post("http://localhost:4000/api/v1/auth/userinfo", {
+      utm_token:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGYzIiwiZW1haWwiOiJ0Y2N4c2ZAZ21haWwuY29tIiwiaWF0IjoxNTk5MDU5NzU5fQ.u7h1IyZMgaU34e2TESGtlHCiUsDZ4zv5SQf-O-okG-8;",
+    })
+    return res.data
+  }
+
+  useEffect(() => {
+    const val = getUserInfo()
+    console.log(val)
+  }, [])
+
   const loc = useLocation()
 
   if (loc.search) {

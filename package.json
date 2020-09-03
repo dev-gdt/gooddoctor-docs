@@ -30,7 +30,8 @@
     "react-router-dom": "5.2.0",
     "throttle-debounce": "2.2.1",
     "typescript": "3.9.7",
-    "unist-util-visit": "2.0.3"
+    "unist-util-visit": "2.0.3",
+    "axios": "0.20.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "3.8.0",
