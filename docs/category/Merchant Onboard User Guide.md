@@ -1,8 +1,8 @@
 ---
 id: merchant-onboard-user-guide
 title: Merchant Onboard User Guide
+sidebar_label: Merchant Onboard User Guide
 ---
-# **Merchant Onboard User Guide**
 
 ## 1. Create Seller and initialize goods
 

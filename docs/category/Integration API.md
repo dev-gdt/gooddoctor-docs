@@ -1,9 +1,9 @@
 ---
 id: integration-api
-title: Integration API
+title: "Merchant Integration Guide"
+sidebar_label: "Integration API"
 ---
 
-# **Merchant Integration Guide**
 
 This document is to define the requirement and provide the information to
 perform merchant integration to Good Doctor Health Mall.

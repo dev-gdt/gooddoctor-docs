@@ -1,11 +1,11 @@
 ---
 id: troubleshoot
-title: Troubleshoot
+title: "Troubleshooting Guide for Merchant Integration"
+sidebar_label: Troubleshoot
 ---
 
-# **Troubleshooting Guide for Merchant Integration**
 
-# A. INTRODUCTION
+## A. INTRODUCTION
 
 This Troubleshooting Guide is intended to provide guidance to support personnel
 or developers in detecting and investigating issues within the Merchant APIs
@@ -279,6 +279,3 @@ Status changed : 1->2
 Status changed: 2->6
 
 ![image](/troubleshoot/image015.png) 
-<!--
-
--->
