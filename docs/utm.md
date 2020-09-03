@@ -1,6 +1,6 @@
 ---
 id: utm
-title: UTM-Generator
+title: UTM Generator
 description: "utm generator project"
 ---
 
@@ -66,4 +66,6 @@ const grab_app_url =
 - v0.2.0 defining the four basic functions of CRUD, connect maridb database,
   swagger
 
-### [Confluence](http://doc.gooddoctor.local/display/TECH/UTM+generator+tools)
+### Confluence
+
+- [confluence link](http://doc.gooddoctor.local/display/TECH/UTM+generator+tools)

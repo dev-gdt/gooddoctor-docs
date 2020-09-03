@@ -50,7 +50,7 @@ module.exports = {
           items: [
             {
               label: "Documentation",
-              to: "docs/introduction",
+              to: "docs",
             },
           ],
         },

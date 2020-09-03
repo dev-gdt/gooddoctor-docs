@@ -1,6 +1,6 @@
 ---
-id: greeting
-title: troubleshoot documentation
+id: troubleshoot
+title: Troubleshoot
 ---
 
 # **Troubleshooting Guide for Merchant Integration**
@@ -46,9 +46,9 @@ To search for the services server IP address:
 2. Enter the service name, for example unifygw
 3. Click on the **Search** button to perform the search
 
-![image](images/image002.png) _Figure 1: Unifygw List_
+![image](/troubleshoot/image002.png) _Figure 1: Unifygw List_
 
-![image](images/image003.png) _Figure 2: Openapi List_
+![image](/troubleshoot/image003.png) _Figure 2: Openapi List_
 
 ## 2. Check Push Order
 
@@ -89,7 +89,7 @@ For example:
 
 For example: zmore unifygw-message.log.2020-01-22.0.gz | grep 112307340207
 
-![image](images/image004.png)
+![image](/troubleshoot/image004.png)
 
 ## 3. Check Order Confirmation
 
@@ -126,7 +126,7 @@ To check for confirmed order:
 For example: zmore openapi-gateway.log.2020-01-22.0.gz | grep sellerConfirmOrder
 | grep 112307340207
 
-![image](images/image005.png)
+![image](/troubleshoot/image005.png)
 
 ## 4. Check Logistics
 
@@ -169,14 +169,14 @@ To check the delivery fee:
 
 For example: more ratel-dubbo-2020-01-22.0.log | grep 112307340207
 
-![image](images/image006.png)
+![image](/troubleshoot/image006.png)
 
 ### 6. Check Delivery Status
 
 The delivery status flow starts from ALLOCATING to COMPLETED status as shown in
 the figure below.
 
-![image](images/image007.png) _Figure 3: Delivery Status Flow_
+![image](/troubleshoot/image007.png) _Figure 3: Delivery Status Flow_
 
 To check the delivery status:
 
@@ -197,19 +197,19 @@ For example, more ratel-web-2020-01-22.0.log | grep 112307340207
 
 Status = "ALLOCATING"
 
-![image](images/image008.png)
+![image](/troubleshoot/image008.png)
 
 Status = "PICKING_UP"
 
-![image](images/image009.png)
+![image](/troubleshoot/image009.png)
 
 Status = "IN_DELIVERY"
 
-![image](images/image010.png)
+![image](/troubleshoot/image010.png)
 
 Status = "COMPLETED"
 
-![image](images/image011.png)
+![image](/troubleshoot/image011.png)
 
 ### 7. Check Cancel Order
 
@@ -234,7 +234,7 @@ To check cancel order:
 
 more ratel-service-2020-01-22.0.log | grep cancelLgOrder | grep 112308070109
 
-![image](images/image012.png)
+![image](/troubleshoot/image012.png)
 
 ## 8. Trade Center
 
@@ -270,15 +270,15 @@ To check the change of Trade Center status:
 
 Status changed: null->1
 
-![image](images/image013.png)
+![image](/troubleshoot/image013.png)
 
 Status changed : 1->2
 
-![image](images/image014.png)
+![image](/troubleshoot/image014.png)
 
 Status changed: 2->6
 
-![image](images/image015.png) 
+![image](/troubleshoot/image015.png) 
 <!--
 
 -->
