@@ -1,5 +1,5 @@
 ---
-id: greeting
+id: troubleshoot
 title: troubleshoot documentation
 ---
 
@@ -79,10 +79,10 @@ For example:
 2.  Go to the log folder by typing "cd logs/unifygw"
 3.  To search for the order ID type the following command:
 
-             "more unifygw-message.log | grep \<orderID>" or
-             "more unifygw-message.log | grep \<orderID>" or
-             "more unifygw-message.log.YYYY-MM-DD.0.gz | grep \<orderID>"
-             Replace the \<orderID> with the actual Order Number you want to search
+        "more unifygw-message.log | grep \<orderID>" or
+        "more unifygw-message.log.YYYY-MM-DD.0.gz | grep \<orderID>"
+
+Replace the \<orderID> with the actual Order Number you want to search
 
 1. If there is no result return after executed the above command, search the
    order ID again in another server IP address.
@@ -109,16 +109,17 @@ Below are the list of server IP addresses for the openapi:
 To check for confirmed order:
 
 1.  Enter the following URL
-    http://webtty-rd.gdtidtool.com/?ip=xxx.xxx.xxx.xxx with the openapi
+    [http://webtty-rd.gdtidtool.com/?ip=\<xxx.xxx.xxx.xxx>] with the openapi
     server IP address.
-
 2.  The terminal console will be displayed in the browser.
 3.  Go to the log folder by typing "cd logs"
 4.  Type the following command to search for the Order ID:
 
-         "more openapi-gateway.log | grep sellerConfirmOrder | grep \<orderID>" or
-         "zmore openapi-gateway.log.YYYY-MM-DD.0.gz | grep sellerConfirmOrder | grep \<orderID>"
-         _Replace \<orderID> with the order ID you want to search_ _Replace "YYYY-MM-DD" with the date of the order is placed_
+        "more openapi-gateway.log | grep sellerConfirmOrder | grep \<orderID>" or
+        "zmore openapi-gateway.log.YYYY-MM-DD.0.gz | grep sellerConfirmOrder | grep \<orderID>"]
+
+_Replace \<orderID> with the order ID you want to search_ _Replace "YYYY-MM-DD"
+with the date of the order is placed_
 
 1. If there is no result return after executed the above command, search the
    order ID again in another server IP address.
@@ -151,18 +152,18 @@ The table below are the type of log files:
 
 To check the delivery fee:
 
-1. Enter the following URL http://webtty-rd.gdtidtool.com/?ip=xxx.xxx.xxx.xxx with the ratel server
+1. Enter the following URL
+   [http://webtty-rd.gdtidtool.com/?ip=\<xxx.xxx.xxx.xxx>] with the ratel server
    IP address.
 2. The terminal console will be displayed in the browser.
 3. Go the ratel log folder by typing "cd logs/ratel"
 4. Type the following command to search the delivery fee:
 
+   more ratel-dubbo.log | grep \<orderID> more ratel-dubbo-YYYY-MM-DD.0.log |
+   grep \<orderID>
 
-      more ratel-dubbo.log | grep \<orderID> more ratel-dubbo-YYYY-MM-DD.0.log |
-      grep \<orderID>
-      Replace \<orderID> with the order ID you want to search Replace "YYYY-MM-DD" with the date of the order is placed
-
-
+Replace \<orderID> with the order ID you want to search Replace "YYYY-MM-DD"
+with the date of the order is placed
 
 1. If there is no result return after executed the above command, search the
    order ID again in another server IP address.
@@ -180,17 +181,17 @@ the figure below.
 
 To check the delivery status:
 
-1. Enter the following URL http://webtty-rd.gdtidtool.com/?ip=xxx.xxx.xxx.xxx with the ratel server IP address.
-2. The terminal console will be displayed in the browser.
-3. Go the ratel log folder by typing "cd logs/ratel"
-4. Type the following command to search the delivery fee:
+1.  Enter the following URL
+    [http://webtty-rd.gdtidtool.com/?ip=\<xxx.xxx.xxx.xxx>]with the ratel server
+    IP address.
+2.  The terminal console will be displayed in the browser.
+3.  Go the ratel log folder by typing "cd logs/ratel"
+4.  Type the following command to search the delivery fee:
 
+        more ratel-web.log | grep \<orderID>
+        more ratel-web-YYYY-MM-DD.0.log | grep \<orderID>
 
-
-      more ratel-web.log | grep \<orderID>
-      more ratel-web-YYYY-MM-DD.0.log | grep \<orderID>
-
-5. If there is no result return after executed the above command, search the
+5.  If there is no result return after executed the above command, search the
     order ID again in another server IP address.
 
 For example, more ratel-web-2020-01-22.0.log | grep 112307340207
@@ -215,19 +216,15 @@ Status = "COMPLETED"
 
 To check cancel order:
 
-
-
-
-
-1. Enter the following URL http://webtty-rd.gdtidtool.com/?ip=xxx.xxx.xxx.xxx with the ratel server IP address.
+1. Enter the following URL
+   [http://webtty-rd.gdtidtool.com/?ip=\<xxx.xxx.xxx.xxx>] with the ratel server
+   IP address.
 2. The terminal console will be displayed in the browser.
 3. Go the ratel log folder by typing "cd logs/ratel"
 4. Type the following command to search the cancel order:
 
-
-
-      more ratel-service.log | grep cancelLgOrder | grep \<orderID> or more
-      ratel-service-YYYY-MM-DD.0.log | grep cancelLgOrder | grep \<orderID>
+   more ratel-service.log | grep cancelLgOrder | grep \<orderID> or more
+   ratel-service-YYYY-MM-DD.0.log | grep cancelLgOrder | grep \<orderID>
 
 5. If there is no result return after executed the above command, search the
    order ID again in another server IP address.
@@ -251,17 +248,16 @@ The table below illustrates the change of trade center status.
 
 To check the change of Trade Center status:
 
-1. Enter the following URL http://webtty-rd.gdtidtool.com/?ip=xxx.xxx.xxx.xxx with the tradecenter server IP address.
+1. Enter the following URL
+   [http://webtty-rd.gdtidtool.com/?ip=\<xxx.xxx.xxx.xxx>] with the tradecenter
+   server IP address.
 2. The terminal console will be displayed in the browser.
 3. Go the ratel log folder by typing "cd logs/tradecenter"
 4. Type the following command to search the delivery fee:
 
-
-
-
 ---
 
-      more info.log | grep \<orderID> more info-YYYY-MM-DD.0.log | grep \<orderID>
+more info.log | grep \<orderID> more info-YYYY-MM-DD.0.log | grep \<orderID>
 
 ---
 
@@ -278,7 +274,4 @@ Status changed : 1->2
 
 Status changed: 2->6
 
-![image](images/image015.png) 
-<!--
-
--->
+![image](images/image015.png)

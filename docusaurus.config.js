@@ -33,7 +33,7 @@ module.exports = {
           position: "left",
         },
         { to: "api", label: "API", position: "left" },
-        { to: "login", label: "LOGIN", position: "right" },
+        { to: "login", label: "Login", position: "right" },
         // { to: "blog", label: "Blog", position: "left" },
         // { to: "help", label: "Help", position: "left" },
         {
@@ -95,7 +95,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "introduction",
+          homePageId: "utm",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
